@@ -145,8 +145,8 @@ namespace CajeroJP
             }
         }
 
-        // Realiza un retiro de la cuenta
-        // Disminuye el saldo si hay fondos suficientes y registra el movimiento
+        // Realiza un retiro de la cuenta principal
+        // Disminuye el saldo si hay fondos suficientes y registra el movimiento de retiro
         public bool Retirar(decimal monto)
         {
             try
@@ -178,7 +178,7 @@ namespace CajeroJP
                 Console.WriteLine($"Error al realizar retiro: {ex.Message}");
                 return false;
             }
-        }
+        } //finaliza el retiro
 
         // Consulta el saldo actual y lo muestra en consola
         public void ConsultarSaldo()
