@@ -132,9 +132,9 @@ namespace CajeroJP
                 ActualizarCuentaEnArchivo();
                 RegistrarMovimiento("Depósito", monto);
 
-                Console.WriteLine($"\n✓ Depósito exitoso!");
-                Console.WriteLine($"Monto depositado: ${monto:N2}");
-                Console.WriteLine($"Nuevo saldo: ${Saldo:N2}");
+                Console.WriteLine($"\n✓ Depósito exitoso!"); //Deposito de dinero
+                Console.WriteLine($"Monto depositado: ${monto:N2}");//Monto depositado
+                Console.WriteLine($"Nuevo saldo: ${Saldo:N2}");//Nuevo saldo
 
                 return true;
             }
