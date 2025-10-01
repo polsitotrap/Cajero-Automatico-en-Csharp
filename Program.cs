@@ -15,6 +15,8 @@ namespace CajeroJP
         // Esta variable guarda la cuenta actualmente activa (sesión iniciada).
         // Si es null, significa que nadie ha iniciado sesión.
         private static Cuenta cuentaActual = null;
+        // Implementación del login en Program.cs
+
 
         // Método principal (punto de entrada del programa).
         static void Main(string[] args)
