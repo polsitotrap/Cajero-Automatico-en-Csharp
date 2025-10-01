@@ -132,9 +132,9 @@ namespace CajeroJP
                 ActualizarCuentaEnArchivo();
                 RegistrarMovimiento("Depósito", monto);
 
-                Console.WriteLine($"\n✓ Depósito exitoso!");
-                Console.WriteLine($"Monto depositado: ${monto:N2}");
-                Console.WriteLine($"Nuevo saldo: ${Saldo:N2}");
+                Console.WriteLine($"\n✓ Depósito exitoso!"); //Deposito de dinero
+                Console.WriteLine($"Monto depositado: ${monto:N2}");//Monto depositado
+                Console.WriteLine($"Nuevo saldo: ${Saldo:N2}");//Nuevo saldo
 
                 return true;
             }
@@ -145,8 +145,8 @@ namespace CajeroJP
             }
         }
 
-        // Realiza un retiro de la cuenta
-        // Disminuye el saldo si hay fondos suficientes y registra el movimiento
+        // Realiza un retiro de la cuenta principal
+        // Disminuye el saldo si hay fondos suficientes y registra el movimiento de retiro
         public bool Retirar(decimal monto)
         {
             try
@@ -178,7 +178,7 @@ namespace CajeroJP
                 Console.WriteLine($"Error al realizar retiro: {ex.Message}");
                 return false;
             }
-        }
+        } //finaliza el retiro
 
         // Consulta el saldo actual y lo muestra en consola
         public void ConsultarSaldo()
